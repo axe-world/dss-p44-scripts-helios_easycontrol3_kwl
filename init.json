@@ -1,0 +1,246 @@
+{
+  "message": "init",
+  "protocol": "json",
+  "name": "Helios KWL",
+  "group": 8,
+  "colorclass": 3,
+  "output": "basic",
+  "sensors": [
+    {
+      "id": "temperature",
+      "sensortype": 1,
+      "usage": 1,
+      "group": 3,
+      "hardwarename": "KWL Innentemperatur",
+      "min": -20,
+      "max": 80,
+      "resolution": 1,
+      "updateinterval": 60,
+      "alivesigninterval": 180
+    },
+    {
+      "id": "humidity",
+      "sensortype": 2,
+      "usage": 1,
+      "group": 3,
+      "hardwarename": "KWL Innenfeuchte",
+      "min": 0,
+      "max": 100,
+      "resolution": 1,
+      "updateinterval": 60,
+      "alivesigninterval": 180
+    }
+  ],
+  "oemmodelguid": "gs1:(01)1234567890123",
+  "dynamicactions": {
+    "Boost": {
+      "title": "Boost",
+      "description": "Boost dauerhaft, Timer deaktiviert"
+    },
+    "Boost30min": {
+      "title": "Boost-30min",
+      "description": "Boost für 30 Minuten"
+    },
+    "Away": {
+      "title": "Unterwegs",
+      "description": "Boost beenden und Profil Unterwegs aktivieren"
+    },
+    "Home": {
+      "title": "Zuhause",
+      "description": "Boost beenden und Profil Zuhause aktivieren"
+    }
+  },
+  "states": {
+    "Lueftungsprofil": {
+      "values": [
+        "Unterwegs",
+        "Zuhause",
+        "Intensiv"
+      ],
+      "type": "enumeration",
+      "description": "Lueftungsprofil"
+    },
+    "Ablufttemperatur": {
+      "values": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "type": "enumeration",
+      "description": "Ablufttemperatur"
+    },
+    "Fortlufttemperatur": {
+      "values": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "type": "enumeration",
+      "description": "Fortlufttemperatur"
+    },
+    "Aussenlufttemperatur": {
+      "values": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "type": "enumeration",
+      "description": "Aussenlufttemperatur"
+    },
+    "Zulufttemperatur": {
+      "values": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35"
+      ],
+      "type": "enumeration",
+      "description": "Zulufttemperatur"
+    },
+    "Filterwechsel": {
+      "values": [
+        "OK",
+        "Fällig"
+      ],
+      "type": "enumeration",
+      "description": "Filterwechsel"
+    },
+    "Waermetauscher": {
+      "values": [
+        "Bypass",
+        "WRG",
+        "KRG"
+      ],
+      "type": "enumeration",
+      "description": "Waermetauscher"
+    }
+  },
+  "events": {
+    "Moduswechsel": {
+      "description": "Moduswechsel"
+    },
+    "Filterwechsel": {
+      "description": "Filterwechsel"
+    },
+    "Bypass": {
+      "description": "Bypass"
+    },
+    "RueckgewinnungWRG": {
+      "description": "Rückgewinnung WRG"
+    },
+    "RueckgewinnungKRG": {
+      "description": "Rückgewinnung KRG"
+    }
+  }
+}
